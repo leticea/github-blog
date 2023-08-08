@@ -1,7 +1,9 @@
+import { Profile } from "./components/Profile";
+
 export function Home() {
   return (
     <>
-      <p>Blog</p>
+      <Profile />
     </>
   );
 }
