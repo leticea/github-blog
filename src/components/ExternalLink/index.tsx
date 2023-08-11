@@ -13,5 +13,5 @@ export function ExternalLink({ text, ...rest }: ExternalLinkProps) {
       {text}
       <FontAwesomeIcon icon={faUpRightFromSquare} />
     </ExternalLinkContainer>
-  )
+  );
 }
