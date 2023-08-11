@@ -9,7 +9,7 @@ export function Profile() {
       <ProfileDetails>
         <header>
           <h1>Letícia Nascimento</h1>
-          <ExternalLink text="Github" />
+          <ExternalLink text="Github" href="#" />
         </header>
       </ProfileDetails>
     </ProfileContainer>

@@ -1,9 +1,10 @@
+import { ComponentProps } from "react";
 import { ExternalLinkContainer } from "./styles";
 
-interface ExternalLinkProps {
+type ExternalLinkProps = ComponentProps<typeof ExternalLinkContainer> & {
   text: string;
 }
 
-export function ExternalLink({ text }: ExternalLinkProps) {
-  return <ExternalLinkContainer>{text}</ExternalLinkContainer>;
+export function ExternalLink({ text, ...rest }: ExternalLinkProps) {
+  return <ExternalLinkContainer {...rest}>{text}</ExternalLinkContainer>;
 }
