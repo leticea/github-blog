@@ -7,8 +7,15 @@ import {
   faChevronLeft,
   faComment,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 export function PostHeader() {
+  const navigate = useNavigate();
+
+  function goBack() {
+    navigate(-1);
+  }
+
   return (
     <PostHeaderContainer>
       <header>
