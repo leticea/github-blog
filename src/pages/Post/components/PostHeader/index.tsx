@@ -2,13 +2,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ExternalLink } from "../../../../components/ExternalLink";
 import { PostHeaderContainer } from "./styles";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faCalendar, faChevronLeft, faComment } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCalendar,
+  faChevronLeft,
+  faComment,
+} from "@fortawesome/free-solid-svg-icons";
 
 export function PostHeader() {
   return (
     <PostHeaderContainer>
       <header>
-        <ExternalLink icon={<FontAwesomeIcon icon={faChevronLeft} />} text="Voltar" href="#" />
+        <ExternalLink
+          onClick={goBack}
+          icon={<FontAwesomeIcon icon={faChevronLeft} />}
+          text="Voltar"
+          variant="iconLeft"
+        />
         <ExternalLink
           text="Ver no Github"
           href="https://github.com/"
