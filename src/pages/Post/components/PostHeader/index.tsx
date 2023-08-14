@@ -8,8 +8,15 @@ import {
   faComment,
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+import { IPost } from "../../../Home";
+import { Spinner } from "../../../../components/Spinner";
 
-export function PostHeader() {
+interface PostHeaderProps {
+  postData: IPost;
+  isLoading: boolean;
+}
+
+export function PostHeader({ postData, isLoading }: PostHeaderProps) {
   const navigate = useNavigate();
 
   function goBack() {
@@ -18,30 +25,41 @@ export function PostHeader() {
 
   return (
     <PostHeaderContainer>
-      <header>
-        <ExternalLink
-          onClick={goBack}
-          icon={<FontAwesomeIcon icon={faChevronLeft} />}
-          text="Voltar"
-          variant="iconLeft"
-        />
-        <ExternalLink text="Ver no Github" href="#" target="_blank" />
-      </header>
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <>
+          <header>
+            <ExternalLink
+              onClick={goBack}
+              icon={<FontAwesomeIcon icon={faChevronLeft} />}
+              text="Voltar"
+              variant="iconLeft"
+            />
+            <ExternalLink
+              text="Ver no Github"
+              href={postData.html_url}
+              target="_blank"
+            />
+          </header>
 
-      <h1>JavaScript data types and data structures</h1>
-      <ul>
-        <li>
-          <FontAwesomeIcon icon={faGithub} />
-          cameronwll
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faCalendar} />
-          Há 1 dia
-        </li>
-        <li>
-          <FontAwesomeIcon icon={faComment} />5 comentários
-        </li>
-      </ul>
+          <h1>{postData.title}</h1>
+          <ul>
+            <li>
+              <FontAwesomeIcon icon={faGithub} />
+              {postData.user.login}
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCalendar} />
+              Há 1 dia
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faComment} />
+              {postData.comments} comentários
+            </li>
+          </ul>
+        </>
+      )}
     </PostHeaderContainer>
   );
 }
