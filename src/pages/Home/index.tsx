@@ -31,7 +31,6 @@ export function Home() {
         const response = await api.get(
           `/search/issues?q=${query}%20repo:${username}/${repoName}`
         );
-        console.log(response.data);
         setPosts(response.data.items);
       } finally {
         setIsLoading(false);
