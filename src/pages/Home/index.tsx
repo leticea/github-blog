@@ -46,7 +46,7 @@ export function Home() {
   return (
     <>
       <Profile />
-      <SearchInput />
+      <SearchInput postsLength={posts.length} getPosts={getPosts} />
       <PostsListContainer>
         {posts.map((post) => (
           <Post key={post.number} post={post} />
