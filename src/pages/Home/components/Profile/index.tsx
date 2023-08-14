@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ExternalLink } from "../../../../components/ExternalLink";
-import { ProfileContainer, ProfileDetails, ProfilePicture } from "./styles";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faBuilding, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import { useCallback, useEffect, useState } from "react";
 import { api } from "../../../../lib/axios";
+import { ExternalLink } from "../../../../components/ExternalLink";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faBuilding, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { ProfileContainer, ProfileDetails, ProfilePicture } from "./styles";
 
 const username = import.meta.env.VITE_GITHUB_USERNAME;
 
@@ -41,30 +41,32 @@ export function Profile() {
 
   return (
     <ProfileContainer>
-      <ProfilePicture src="https://github.com/leticea.png" />
+      <ProfilePicture src={profileData.avatar_url} />
 
       <ProfileDetails>
         <header>
-          <h1>Letícia Nascimento</h1>
-          <ExternalLink text="Github" href="#" />
+          <h1>{profileData.name}</h1>
+          <ExternalLink
+            text="Github"
+            href={profileData.html_url}
+            target="_blank"
+          />
         </header>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab.
-        </p>
+        <p>{profileData.bio}</p>
         <ul>
           <li>
             <FontAwesomeIcon icon={faGithub} />
-            leticea
+            {profileData.login}
           </li>
-          <li>
-            <FontAwesomeIcon icon={faBuilding} />
-            Rocketseat
-          </li>
+          {profileData?.company && (
+            <li>
+              <FontAwesomeIcon icon={faBuilding} />
+              {profileData.company}
+            </li>
+          )}
           <li>
             <FontAwesomeIcon icon={faUserGroup} />
-            123
+            {profileData.followers} seguidores
           </li>
         </ul>
       </ProfileDetails>
