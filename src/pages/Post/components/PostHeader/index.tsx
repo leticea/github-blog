@@ -10,6 +10,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { IPost } from "../../../Home";
 import { Spinner } from "../../../../components/Spinner";
+import { relativeDateFormatter } from "../../../../utils/formatter";
 
 interface PostHeaderProps {
   postData: IPost;
@@ -22,6 +23,8 @@ export function PostHeader({ postData, isLoading }: PostHeaderProps) {
   function goBack() {
     navigate(-1);
   }
+
+  const formattedDate = relativeDateFormatter(postData?.created_at);
 
   return (
     <PostHeaderContainer>
@@ -51,7 +54,7 @@ export function PostHeader({ postData, isLoading }: PostHeaderProps) {
             </li>
             <li>
               <FontAwesomeIcon icon={faCalendar} />
-              Há 1 dia
+              {formattedDate}
             </li>
             <li>
               <FontAwesomeIcon icon={faComment} />
