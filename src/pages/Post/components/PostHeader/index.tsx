@@ -25,11 +25,7 @@ export function PostHeader() {
           text="Voltar"
           variant="iconLeft"
         />
-        <ExternalLink
-          text="Ver no Github"
-          href="https://github.com/"
-          target="_blank"
-        />
+        <ExternalLink text="Ver no Github" href="#" target="_blank" />
       </header>
 
       <h1>JavaScript data types and data structures</h1>
