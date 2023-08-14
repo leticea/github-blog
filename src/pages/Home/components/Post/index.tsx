@@ -1,17 +1,18 @@
+import { IPost } from "../..";
 import { PostContainer } from "./styles";
 
-export function Post() {
+interface PostProps {
+  post: IPost;
+}
+
+export function Post({ post }: PostProps) {
   return (
-    <PostContainer to="/post/1">
+    <PostContainer to={`/post/${post.number}`}>
       <div>
-        <strong>JavaScript data types and data structures</strong>
-        <span>Há 1 dia</span>
+        <strong>{post.title}</strong>
+        <span>{post.created_at}</span>
       </div>
-      <p>
-        Is a scripting language that enables you to create dynamically updating
-        content, control multimedia, animate images, and pretty much everything
-        else...
-      </p>
+      <p>{post.body}</p>
     </PostContainer>
   );
 }
