@@ -17,6 +17,11 @@ export const PostContentContainer = styled.section`
     color: ${({ theme }) => theme.colors["brand-blue"]};
   }
 
+  ul {
+    list-style: inherit;
+    padding-left: 1.5rem;
+  }
+
   pre {
     background: ${({ theme }) => theme.colors["base-post"]};
     padding: 1rem;
