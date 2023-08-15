@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;
+  </p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br>
 
-Currently, two official plugins are available:
+# Github Blog
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias
 
-## Expanding the ESLint configuration
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Npm](https://www.npmjs.com/) - 8.19.2
+- [Vite](https://vitejs.dev/) - ^4.2.0
+- [TypeScript](https://www.typescriptlang.org/) - ^4.9.3
+- [React](https://react.dev/) - ^18.2.0
+- [React Hook Form](https://react-hook-form.com/) - ^7.43.9
+- [React Router Dom](https://reactrouter.com/en/main) - ^6.9.0
+- [Styled Components](https://styled-components.com/) - ^5.3.9
+- [Phosphor Icons](https://phosphoricons.com/)
+- [Zod](https://zod.dev/) - ^3.21.4
 
-- Configure the top-level `parserOptions` property like this:
+## 💻 Projeto
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Projeto de Front-end de React de uma aplicação que utiliza a API do GitHub para buscar issues de um repositório, mostra os dados do perfil e exibe elas como uma página de blog.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Módulo ReactJS do Ignite na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
+
+<div align="center">
+  <img alt="" src=".github/image.png">
+</div>
+
+<div align="center">
+  <img alt="" src=".github/image2.png">
+</div>
+
+
+## ⚙️ Como Rodar
+
+- Clone o projeto.
+- Entre na pasta do projeto e rode 'npm install' (use 'yarn add' se for essa a sua configuração).
+- Crie um arquivo .env na raiz do projeto com as configurações VITE_GITHUB_USERNAME=seu_username e VITE_GITHUB_REPONAME=nome_do_repositório, lembrando que o repositório deve ser criado como issues.
+- npm run dev (para rodar o projeto na porta indicada).
+
+## 🤔 Como contribuir
+
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
+
+Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
+
+## 📝 Licença
+
+Esse projeto está sob a licença MIT.

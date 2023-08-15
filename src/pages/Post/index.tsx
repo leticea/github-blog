@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { api } from "../../lib/axios";
 import { IPost } from "../Home";
 import { PostHeader } from "./components/PostHeader";
-import { api } from "../../lib/axios";
-import { useParams } from "react-router-dom";
 import { PostContent } from "./components/PostContent";
 
 const username = import.meta.env.VITE_GITHUB_USERNAME;
@@ -26,11 +26,11 @@ export function Post() {
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [postData]);
 
   useEffect(() => {
     getPostDetails();
-  }, [postData]);
+  }, []);
 
   return (
     <>
