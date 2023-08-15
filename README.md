@@ -17,12 +17,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Vite](https://vitejs.dev/) - ^4.4.5
 - [TypeScript](https://www.typescriptlang.org/) - ^4.9.3
 - [React](https://react.dev/) - ^18.2.0,
-- [React Hook Form](https://react-hook-form.com/) - ^7.45.4
-- [React Router Dom](https://reactrouter.com/en/main) - ^6.15.0
+- [React-Hook-Form](https://react-hook-form.com/) - ^7.45.4
+- [React-Router-Dom](https://reactrouter.com/en/main) - ^6.15.0
 - [Axios](https://github.com/axios/axios) - ^1.4.0
 - [Zod](https://zod.dev/) - ^3.21.4
 - [Moment](https://momentjs.com/docs/) - ^2.29.4
 - [React-Markdown](https://github.com/remarkjs/react-markdown) - ^8.0.7
+- [React-Syntax-Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) - ^15.5.0
 - [Styled Components](https://styled-components.com/) - ^6.0.5
 - [Font Awesome](https://fontawesome.com/docs/web/use-with/react/) - ^6.4.2
 
