@@ -7,6 +7,10 @@ export const PostContentContainer = styled.section`
   padding: 2.5rem 2rem;
   margin-bottom: 8rem;
 
+  img {
+    width: 100%;
+  }
+
   h1,
   h2,
   h3 {
@@ -21,6 +25,11 @@ export const PostContentContainer = styled.section`
       background: none !important;
       padding: o !important;
       margin: 0 !important;
+
+      code {
+        font-family: "FiraCode", monospace !important;
+        line-height: 160% !important;
+      }
     }
   }
 `;
