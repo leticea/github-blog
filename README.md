@@ -42,7 +42,7 @@ Projeto de Front-end de React de uma aplicação que utiliza a API do GitHub par
 
 - Clone o projeto.
 - Entre na pasta do projeto e rode 'npm install' (use 'yarn add' se for essa a sua configuração).
-- Crie um arquivo .env na raiz do projeto com as configurações VITE_GITHUB_USERNAME=seu_username e VITE_GITHUB_REPONAME=nome_do_repositório, lembrando que o repositório deve ser criado como issues.
+- Crie um arquivo .env na raiz do projeto com as configurações VITE_GITHUB_USERNAME=seu_username e VITE_GITHUB_REPONAME=nome_do_repositório, lembrando que o repositório deve ser criado com as issues.
 - npm run dev (para rodar o projeto na porta indicada).
 
 ## 🤔 Como contribuir
