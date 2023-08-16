@@ -4,8 +4,8 @@ import { ExternalLink } from "../../../../components/ExternalLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBuilding, faUserGroup } from "@fortawesome/free-solid-svg-icons";
-import { ProfileContainer, ProfileDetails, ProfilePicture } from "./styles";
 import { Spinner } from "../../../../components/Spinner";
+import { ProfileContainer, ProfileDetails, ProfilePicture } from "./styles";
 
 const username = import.meta.env.VITE_GITHUB_USERNAME;
 

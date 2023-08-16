@@ -1,7 +1,7 @@
 import { ComponentProps, ReactNode } from "react";
-import { ExternalLinkContainer } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { ExternalLinkContainer } from "./styles";
 
 type ExternalLinkProps = ComponentProps<typeof ExternalLinkContainer> & {
   text: string;

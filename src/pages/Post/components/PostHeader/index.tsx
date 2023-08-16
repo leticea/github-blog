@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ExternalLink } from "../../../../components/ExternalLink";
-import { PostHeaderContainer } from "./styles";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faCalendar,
@@ -11,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { IPost } from "../../../Home";
 import { Spinner } from "../../../../components/Spinner";
 import { relativeDateFormatter } from "../../../../utils/formatter";
+import { PostHeaderContainer } from "./styles";
 
 interface PostHeaderProps {
   postData: IPost;
