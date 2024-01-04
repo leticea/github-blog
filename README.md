@@ -3,7 +3,7 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;
-  </p>
+</p>
 
 <br>
 
@@ -40,7 +40,6 @@ Projeto de Front-end de React de uma aplicação que utiliza a API do GitHub par
 <div align="center">
   <img alt="" src=".github/image2.png">
 </div>
-
 
 ## ⚙️ Como Rodar
 
